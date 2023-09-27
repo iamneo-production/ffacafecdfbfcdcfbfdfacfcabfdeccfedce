@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Details Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>HOTEL DETAILS FORM</h1>
+    <form id="hotelForm">
+        <label for="hotelName">Hotel Name:</label>
+        <input type="text" id="hotelName" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" required>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" required>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </select>
+
+        <label for="pool">Pool:</label>
+        <input type="checkbox" id="pool">
+
+        <label for="gym">Gym:</label>
+        <input type="checkbox" id="gym">
+
+        <label for="spa">Spa:</label>
+        <input type="checkbox" id="spa">
+
+        <button type="submit">Add Hotel</button>
+    </form>
+
+    <table id="hotelTable">
+        <thead>
+            <tr>
+                <th>Hotel Name</th>
+                <th>Location</th>
+                <th>Rating</th>
+                <th>Pool</th>
+                <th>Gym</th>
+                <th>Spa</th>
+            </tr>
+        </thead>
+        <tbody id="hotelList">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
